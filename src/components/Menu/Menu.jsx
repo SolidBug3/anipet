@@ -13,7 +13,7 @@ function Menu() {
             <div className={`Menu-items ${open ? "Menu-items-open" : ""}`}>
                 <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
                     <span className="Menu-icon">⌂</span>
-                    <span>Accueuil</span>
+                    <span>Accueil</span>
                 </Link>
 
                 <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
@@ -28,7 +28,7 @@ function Menu() {
 
                 <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
                     <span className="Menu-icon">⚙</span>
-                    <span>Profile</span>
+                    <span>Profil</span>
                 </Link>
             </div>
         </div>
