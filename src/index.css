@@ -1,4 +1,6 @@
-html, body{
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+hmtl, body {
     margin: 0px;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
