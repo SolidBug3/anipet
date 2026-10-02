@@ -10,29 +10,27 @@ function Menu() {
         <div className="Menu">
             <button className="Menu-menu" onClick={() => setOpen(!open)}>☰</button>
 
-            {open && (
-                <div className="Menu-items">
-                    <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
-                        <span className="Menu-icon">⌂</span>
-                        <span>Accueuil</span>
-                    </Link>
+            <div className={`Menu-items ${open ? "Menu-items-open" : ""}`}>
+                <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
+                    <span className="Menu-icon">⌂</span>
+                    <span>Accueuil</span>
+                </Link>
 
-                    <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
-                        <span className="Menu-icon">♡</span>
-                        <span>Garder</span>
-                    </Link>
+                <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
+                    <span className="Menu-icon">♡</span>
+                    <span>Garder</span>
+                </Link>
 
-                    <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
-                        <span className="Menu-icon">♡</span>
-                        <span>Faire garder</span>
-                    </Link>
+                <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
+                    <span className="Menu-icon">♡</span>
+                    <span>Faire garder</span>
+                </Link>
 
-                    <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
-                        <span className="Menu-icon">⚙</span>
-                        <span>Profile</span>
-                    </Link>
-                </div>
-            )}
+                <Link className="Menu-item" to="/" onClick={() => setOpen(false)}>
+                    <span className="Menu-icon">⚙</span>
+                    <span>Profile</span>
+                </Link>
+            </div>
         </div>
     )
 }
